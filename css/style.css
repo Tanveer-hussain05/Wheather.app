@@ -1,118 +1,71 @@
-
-body {
+/* * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+}
+
+body {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    background: #111;
+    min-height: 100vh;
+    background-color: aqua;
 }
-
-.app-container {
+.container {
+    position: relative;
+    width: 400px;
+    height: 555px;
+    background: purple;
+    color: #fff;
+}
+.search-box {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 55px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-
-
-.background-animation {
+.search-box i {
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 10px;
+    font-size: 28px;
+}
+.search-box input {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    z-index: -1;
-}
-
-/* Keyframes for dynamic gradient shifting */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-
-.weather-app {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    width: 400px;
-    text-align: center;
-    color: white;
-}
-
-
-.search-box {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-.search-box input {
-    width: 250px;
-    padding: 15px;
-    border-radius: 30px;
-    border: none;
+    border: 2px solid rgb(255, 255, 255,.5);
     outline: none;
-    font-size: 18px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    border-radius: 10px;
+    padding: 0 48px 0 42px;
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
-.search-box input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+.search-box input ::placeholder {
+    color: #fff;
+    text-transform: capitalize;
 }
 
 .search-box button {
     position: absolute;
-    right: 10px;
-    background: none;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: transparent;
     border: none;
-    color: white;
-    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
+    padding: 0 40px 0px 5px;
     cursor: pointer;
 }
+.weather-box img {
+    width: 60%;
 
-.weather-info h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.temp {
-    font-size: 80px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.weather-details {
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.weather-icon {
-    font-size: 100px;
-    margin-top: 20px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 500px) {
-    .weather-app {
-        width: 90%;
-    }
-    .temp {
-        font-size: 60px;
-    }
-}
+} */
