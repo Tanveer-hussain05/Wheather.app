@@ -1,37 +1,22 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <title>Source Code Of Weather Web App</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 <body>
-
     <div class="container">
-        <div class="search-box">
-            <i class='bx bxs-map'></i>
-            <input type="text" placeholder="enter your location">
-            <button class=" class=bx bx-search"></button>
-        </div>
-
-        <div class="weather-box">
-            <div class="box">
-                <div class="info-weather">
-                    <div class="weather">
-                        <img src="images/1im.jpg" alt="">
-                        <p class="tempreature">16 <span>°C</span></p>
-                        <p class="descripton">Broken clouds</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="search_box"> 
+        <input type="text" placeholder="Enter a city name" id="city" value="VARANASI" autocomplete="off"/>
+        <button id="search"><ion-icon class="icon" name="search"></ion-icon></button>
+      </div>
+      <div id="show"></div>
     </div>
-
-
-
-    <script src="script.js"></script>
-</body>
-</html> -->
+   <!---------------  SCRIPT  --------------------->
+   <script src="script.js"></script>  
+</body>   
+</html>
